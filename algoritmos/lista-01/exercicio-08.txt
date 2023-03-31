@@ -1,0 +1,7 @@
+Algoritmo Exercicio08
+	Real n1, n2, n3, media
+Inicio
+	Ler n1, n2, n3
+	media <- (n1 + n2 + n3)/3
+	Escrever 'media: ', media
+Fim

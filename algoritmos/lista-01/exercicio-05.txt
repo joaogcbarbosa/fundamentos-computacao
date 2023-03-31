@@ -1,0 +1,13 @@
+Algoritmo Exercicio05
+	Real p1, p2
+	Real _lista01, _lista02, _lista03, _lista04, _lista05, trabalho
+	Real mediaGeral, mediaListas
+Inicio
+	Ler p1, p2, _lista01, _lista02, _lista03, _lista04, _lista05, trabalho
+
+	mediaListas <- (_lista01 + _lista02 + _lista03 + _lista04 + _lista05)/5
+
+	mediaGeral <- (0.3 * p1 + 0.4 * p2 + 0.2 * mediaListas + 0.1 * trabalho)
+
+	Escrever 'media: ', mediaGeral
+Fim

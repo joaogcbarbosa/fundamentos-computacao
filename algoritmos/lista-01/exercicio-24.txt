@@ -1,0 +1,8 @@
+Algoritmo Exercicio24
+	Real salario, SALARIO_MINIMO, qtosMinimos
+Inicio
+	SALARIO_MINIMO <- 1212.00
+	Ler salario
+	qtosMinimos <- salario/SALARIO_MINIMO
+	Escrever 'o funcionario recebe ', qtosMinimos, ' salarios minimos'
+Fim

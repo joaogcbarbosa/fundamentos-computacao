@@ -1,0 +1,8 @@
+Algoritmo Exercicio12
+	Real a, r, PI
+Inicio
+	PI <- 3.14159
+	Ler r
+	a <- PI * (r^2)
+	Escrever 'area: ', a	
+Fim

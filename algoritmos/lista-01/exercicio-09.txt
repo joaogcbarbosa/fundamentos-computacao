@@ -1,0 +1,7 @@
+Algoritmo Exercicio09
+	Real salario, novoSalario
+Inicio
+	Ler salario
+	novoSalario <- salario * 1.25
+	Escrever 'novo salario: R$', novoSalario
+Fim

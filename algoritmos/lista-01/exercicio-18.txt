@@ -1,0 +1,12 @@
+Algoritmo Exercicio18
+	Inteiro totalDias, totalMeses, dias, meses, anos
+Inicio
+	Ler totalDias
+	dias <- totalDias % 30
+	totalMeses <- totalDias // 30
+	meses <- totalMeses % 12
+	anos <- totalMeses // 12
+	Escrever anos, ' anos'
+	Escrever meses, ' meses'
+	Escrever dias, ' dias'
+Fim

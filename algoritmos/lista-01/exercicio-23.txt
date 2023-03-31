@@ -1,0 +1,9 @@
+Algoritmo Exercicio23
+	Real p1, p2, p3, mediaPonderada
+	Inteiro pesoP1, pesoP2, pesoP3
+Inicio
+	Ler p1, p2, p3
+	Ler pesoP1, pesoP2, pesoP3
+	mediaPonderada <- (p1*pesoP1 + p2*pesoP2 + p3*pesoP3)/(pesoP1+pesoP2+pesoP3)
+	Escrever mediaPonderada
+Fim

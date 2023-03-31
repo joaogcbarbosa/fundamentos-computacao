@@ -1,0 +1,8 @@
+Algoritmo Exercicio10
+	Real pesoLibras, pesoGramas
+Inicio
+	Escrever 'Peso (em libras):'
+	Ler pesoLibras
+	pesoGramas <- pesoLibras * 453.59237
+	Escrever 'Resposta:', pesoGramas, 'g'
+Fim

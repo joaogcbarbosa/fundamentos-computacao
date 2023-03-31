@@ -1,0 +1,8 @@
+Algoritmo Exercicio11
+	Real comprimentoPolegadas, comprimentoCm
+Inicio
+	Escrever 'Comprimento em polegadas: '
+	Ler comprimentoPolegadas
+	comprimentoCm <- comprimentoPolegadas * 2.54
+	Escrever comprimentoPolegadas, ' pol = ', comprimentoCm, ' cm'
+Fim

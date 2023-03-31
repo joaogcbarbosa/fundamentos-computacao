@@ -1,0 +1,9 @@
+Algoritmo Exercicio17
+	Inteiro anos, meses, dias, anosEmDias, mesesEmDias, totalDias
+Inicio
+	Ler anos, meses, dias
+	anosEmDias <- anos * 360
+	mesesEmDias <- meses * 30
+	totalDias <- anosEmDias + mesesEmDias + dias
+	Escrever totalDias
+Fim

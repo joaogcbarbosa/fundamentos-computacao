@@ -1,0 +1,9 @@
+Algoritmo Exercicio14
+	Real a, b, c, delta, raiz1, raiz2
+Inicio
+	Ler a, b, c
+	delta <- (b^2) - (4 * a * c)
+	raiz1 <- ((-1 * b) + (delta^(0.5)))/(2 * a)
+	raiz2 <- ((-1 * b) - (delta^(0.5)))/(2 * a)
+	Escrever 'raiz1: ', raiz1, ', raiz2: ', raiz2
+Fim

@@ -1,0 +1,9 @@
+Algoritmo Exercicio22
+	Real salario, conta1, conta2, conta1ComJuros, conta2ComJuros, salarioRestante
+Inicio
+	Ler salario, conta1, conta2
+	conta1ComJuros <- conta1 * 1.02
+	conta2ComJuros <- conta2 * 1.02
+	salarioRestante <- salario - conta1ComJuros - conta2ComJuros
+	Escrever salarioRestante
+Fim

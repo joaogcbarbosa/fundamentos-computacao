@@ -1,0 +1,7 @@
+Algoritmo Exercicio07
+	Inteiro n1, n2, n3, n4, soma
+Inicio
+	Ler n1, n2, n3, n4
+	soma <- n1 + n2 + n3 + n4
+	Escrever 'soma: ', soma
+Fim

@@ -1,0 +1,7 @@
+Algoritmo Exercicio21
+	Real salarioFixo, valorVendas, salarioFinal
+Inicio
+	Ler salarioFixo, valorVendas
+	salarioFinal <- salarioFixo + valorVendas * 1.04
+	Escrever salarioFinal
+Fim

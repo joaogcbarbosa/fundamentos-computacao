@@ -1,0 +1,11 @@
+Algoritmo Exercicio20
+	Real base, altura, perimetro, area, diagonal
+Inicio
+	Ler base, altura
+	perimetro <- 2 * base + 2 * altura
+	area <- base * altura
+	diagonal <- (base^2 + altura^2)^0.5
+	Escrever perimetro
+	Escrever area
+	Escrever diagonal
+Fim

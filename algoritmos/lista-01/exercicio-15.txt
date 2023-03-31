@@ -1,0 +1,24 @@
+Algoritmo Exercicio15
+
+	Inteiro qtdMoedas1R, qtdMoedas50C, qtdMoedas25C, qtdMoedas10C, qtdMoedas5C, qtdMoedas1C
+	Real total
+	
+Inicio
+
+	Escrever 'Número de moedas de 1 Real: '
+	Ler qtdMoedas1Real
+	Escrever 'Número de moedas de 50 centavos: '
+	Ler qtdMoedas50C
+	Escrever 'Número de moedas de 25 centavos: '
+	Ler qtdMoedas25C
+	Escrever 'Número de moedas de 10 centavos: '
+	Ler qtdMoedas10C
+	Escrever 'Número de moedas de 5 centavos: '
+	Ler qtdMoedas5C
+	Escrever 'Número de moedas de 1 centavo: '
+	Ler qtdMoedas1C
+	
+	total <- qtdMoedas1R * 1 + qtdMoedas50C * 0.5 + qtdMoedas25C * 0.25 + qtdMoedas10C * 0.10 + qtdMoedas5C * 0.05 + qtdMoedas1C * 0.01
+	Escrever 'R$', total
+
+Fim

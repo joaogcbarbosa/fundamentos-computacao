@@ -1,0 +1,9 @@
+Algoritmo Exercicio19
+	Inteiro hora, minuto, segundo, horasEmSegundos, minutosEmSegundos, totalEmSegundos
+Inicio
+	Ler hora, minuto, segundo
+	horasEmSegundos <- hora * 3600
+	minutosEmSegundos <- minuto * 60
+	totalEmSegundos <- horasEmSegundos + minutosEmSegundos + segundo
+	Escrever totalEmSegundos
+Fim
