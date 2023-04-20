@@ -1,0 +1,44 @@
+Algoritmo "exercicio01"
+
+Var
+
+   sexo: caracter
+   salario, somaSalarioMasc, somaSalarioFem, mediaSalarioFem, mediaSalarioMasc, maiorSalario: real
+   idade, contMasc, contFem: inteiro
+
+Inicio
+
+      somaSalarioMasc <- 0
+      somaSalarioFem <- 0
+      contMasc <- 0
+      contFem <- 0
+      maiorSalario <- -1
+      
+      Leia(idade)
+      enquanto (idade > 0) faça
+               Leia(sexo)
+               Leia(salario)
+               
+               se (sexo = "M") então
+                  contMasc <- contMasc + 1
+                  somaSalarioMasc <- somaSalarioMasc + salario
+               senao
+                    contFem <- contFem + 1
+                    somaSalarioFem <- somaSalarioFem + salario
+               FimSe
+               
+               se (idade < 30) e (salario > maiorSalario) então
+                  maiorSalario <- salario
+               FimSe
+               
+               Leia(idade)
+      FimEnquanto
+      
+      mediaSalarioMasc <- somaSalarioMasc / contMasc
+      mediaSalarioFem <- somaSalarioFem / contFem
+      
+      Escreval("Média salarial dos homens: R$", mediaSalarioMasc)
+      Escreval("Média salarial das mulheres: R$", mediaSalarioFem)
+      Escreval("Maior salário entre as pessoas com menos de 30 anos: R$", maiorSalario)
+      
+Fimalgoritmo
