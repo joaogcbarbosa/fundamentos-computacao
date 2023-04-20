@@ -1,0 +1,24 @@
+Algoritmo "exercicio03"
+
+Var
+
+   idade: Inteiro
+
+Inicio
+
+      Leia(idade)
+      se (idade <= 4) entao
+         Escreval("Categoria Baby")
+      senao
+           se (idade <= 10) entao
+              Escreval("Categoria Infantil")
+           senao
+                se (idade <= 17) entao
+                   Escreval("Categoria Juvenil")
+                senao
+                     Escreval("Categoria Máster")
+                FimSe
+           FimSe
+      FimSe
+
+Fimalgoritmo

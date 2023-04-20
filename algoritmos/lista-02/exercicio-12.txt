@@ -1,0 +1,21 @@
+Algoritmo "exercicio12"
+
+Var
+
+   numeroEmpregados: inteiro
+   salarioMinimo, salarioIndividual, valorVendas, comissaoLoja, comissaoIndividual: real
+   
+
+Inicio
+
+      Leia(numeroEmpregados)
+      Leia(salarioMinimo)
+      Leia(valorVendas)
+      
+      comissaoLoja <- valorVendas * 1.05
+      comissaoIndividual <- comissaoLoja / numeroEmpregados
+      salarioIndividual <- 2 * salarioMinimo + comissaoIndividual
+      
+      Escreval("Cada funcionário receberá R$", salarioIndividual)
+      
+Fimalgoritmo

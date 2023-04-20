@@ -1,0 +1,16 @@
+Algoritmo "exercicio06"
+
+Var
+
+   n: inteiro
+
+Inicio
+
+      Leia(n)
+      se (n % 2 = 0) entao
+         Escreval(n, " é par")
+      senao
+           Escreval(n, " é ímpar")
+      FimSe
+
+Fimalgoritmo

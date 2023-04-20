@@ -1,0 +1,29 @@
+Algoritmo "exercicio13"
+
+Var
+
+   saldo, imposto: Real
+
+Inicio
+
+      Leia(saldo)
+      se (saldo < 100) entao
+         Escreval("Isento de imposto")
+      senao
+           se (saldo < 1000) entao
+              imposto <- saldo * 0.01
+           senao
+                se (saldo < 10000) entao
+                   imposto <- saldo * 0.02
+                senao
+                     se (saldo < 100000) entao
+                        imposto <- saldo * 0.03
+                     senao
+                          imposto <- saldo * 0.05
+                     FimSe
+                FimSe
+           FimSe
+           Escreval("Imposto de R$", imposto)
+      FimSe
+      
+Fimalgoritmo

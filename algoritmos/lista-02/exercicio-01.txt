@@ -1,0 +1,36 @@
+Algoritmo "exercicio01"
+
+Var
+   n1, n2, n3: Inteiro
+
+Inicio
+
+      Leia(n1)
+      Leia(n2)
+      Leia(n3)
+      Se (n1 > n2) e (n2 > n3) entao
+         EscrevaL(n3, n2, n1)
+      Senao
+           se (n2 > n3) e (n3 > n1) entao
+              EscrevaL(n1, n3, n2)
+           senao
+                se (n3 > n1) e (n1 > n2) entao
+                   EscrevaL(n2, n1, n3)
+                senao
+                     se (n1 > n3) e (n3 > n2) entao
+                        EscrevaL(n2, n3, n1)
+                     senao
+                          se (n2 > n1) e (n1 > n3) entao
+                             EscrevaL(n3, n1, n2)
+                          senao
+                               se (n3 > n2) e (n2 > n1) entao
+                                  EscrevaL(n1, n2, n3)
+                               FimSe
+                          FimSe
+                     FimSe
+                FimSe
+           FimSe
+      FimSe
+
+
+Fimalgoritmo

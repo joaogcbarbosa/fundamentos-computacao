@@ -1,0 +1,38 @@
+Algoritmo "exercicio07"
+
+Var
+
+   horasA, horasB: inteiro
+   horaAulaA, horaAulaB, salarioA, salarioB: real
+
+Inicio
+
+      Escreva("Total de horas do professor A: ")
+      Leia(horasA)
+      Escreva("Hora Aula do professor A: R$")
+      Leia(horaAulaA)
+      Escreva("Total de horas do professor B: ")
+      Leia(horasB)
+      Escreva("Hora Aula do professor B: R$")
+      Leia(horaAulaB)
+      
+      salarioA <- horasA * horaAulaA
+      salarioB <- horasB * horaAulaB
+      
+      se (salarioA > salarioB) entao
+         Escreval("Professor A tem maior salário")
+         Escreval("A) R$", salarioA)
+         Escreval("B) R$", salarioB)
+      senao
+           se (salarioA < salarioB) entao
+              Escreval("Professor B tem maior salário")
+              Escreval("A) R$", salarioA)
+              Escreval("B) R$", salarioB)
+           senao
+                Escreval("Ambos salários são iguais")
+                Escreval("R$", salarioA)
+           FimSe
+      FimSe
+      
+
+Fimalgoritmo

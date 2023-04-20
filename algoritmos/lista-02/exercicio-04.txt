@@ -1,0 +1,35 @@
+Algoritmo "exercicio04"
+
+Var
+
+   preco, precoComAumento: Real
+
+Inicio
+
+      Leia(preco)
+      
+      se (preco <= 50) entao
+         precoComAumento <- preco * 1.05
+      senao
+           se (preco <= 100) entao
+              precoComAumento <- preco *  1.10
+           senao
+                precoComAumento <- preco * 1.15
+           FimSe
+      FimSe
+
+      se (precoComAumento <= 80) entao
+         Escreval("R$", precoComAumento, ", Barato")
+      senao
+           se (precoComAumento <= 120) entao
+              Escreval("R$", precoComAumento, ", Normal")
+           senao
+                se (precoComAumento <= 200) entao
+                   Escreval("R$", precoComAumento, ", Caro")
+                senao
+                     Escreval("R$", precoComAumento, ", Muito Caro")
+                FimSe
+           FimSe
+      FimSe
+
+Fimalgoritmo

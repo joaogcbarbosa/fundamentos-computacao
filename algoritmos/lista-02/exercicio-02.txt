@@ -1,0 +1,43 @@
+Algoritmo "exercicio02"
+
+Var
+
+   operacao: Inteiro
+   soma, subtracao, multiplicacao, divisao: Real
+   n1, n2: Real
+
+Inicio
+
+      Escreval("Digite o número da operação que deseja realizar:")
+      Escreval("1 - Soma")
+      Escreval("2 - Subtração")
+      Escreval("3 - Multiplicação")
+      Escreval("4 - Divisão")
+      Leia(operacao)
+      Escreva("Primeiro número: ")
+      Leia(n1)
+      Escreva("Segundo número: ")
+      Leia(n2)
+      Se (operacao = 1) entao
+         soma <- n1 + n2
+         Escreval("Resultado: ", soma)
+      senao
+           se (operacao = 2) entao
+              subtracao <- n1 - n2
+              Escreval("Resultado: ", subtracao)
+           senao
+                se (operacao = 3) entao
+                   multiplicacao <- n1 * n2
+                   Escreval("Resultado: ", multiplicacao)
+                senao
+                     se (n2 = 0) entao
+                        Escreval("Erro de divisão por zero")
+                     senao
+                          divisao <- n1 / n2
+                          Escreval("Resultado: ", divisao)
+                     FimSe
+                FimSe
+           FimSe
+      FimSe
+
+Fimalgoritmo

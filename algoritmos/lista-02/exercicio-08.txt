@@ -1,0 +1,29 @@
+Algoritmo "exercicio08"
+
+Var
+
+   totalVotos, eleitores, brancos, nulos, validos: Inteiro
+   percBrancos, percNulos, percValidos: Real
+
+Inicio
+
+      Leia(eleitores)
+      Leia(brancos)
+      Leia(nulos)
+      Leia(validos)
+      
+      totalVotos <- brancos + nulos + validos
+      
+      percBrancos <- (brancos * 100) / eleitores
+      percNulos <- (nulos * 100) / eleitores
+      percValidos <- (validos * 100) / eleitores
+      
+      se (totalVotos <> eleitores) entao
+         Escreval("Total de votos brancos, nulos e brancos incompatível com número de eleitores")
+      senao
+           Escreval(percBrancos, "% de votos brancos")
+           Escreval(percNulos, "% de votos nulos")
+           Escreval(percValidos, "% de votos válidos")
+      FimSe
+
+Fimalgoritmo

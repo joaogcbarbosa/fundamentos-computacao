@@ -1,0 +1,24 @@
+Algoritmo "exercicio05"
+
+Var
+
+   sexo: caractere
+   pesoIdeal, altura: real
+
+Inicio
+
+      Leia(sexo)
+      Leia(altura)
+      se (sexo = "M") entao
+          pesoIdeal <- (72.7 * altura) - 58.0
+          Escreval("Peso ideal", pesoIdeal, "Kg")
+      senao
+           se (sexo = "F") entao
+              pesoIdeal <- (62.1 * altura) - 44.7
+              Escreval("Peso ideal", pesoIdeal, "Kg")
+           senao
+                Escreval("Sexo inválido")
+           FimSe
+      FimSe
+
+Fimalgoritmo
