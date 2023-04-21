@@ -1,0 +1,31 @@
+Algoritmo "exercicio03"
+
+Var
+
+   mediaPares: real
+   num, contPar, contImpar, somaPares: inteiro
+
+Inicio
+
+      contPar <- 0
+      contImpar <- 0
+      somaPares <- 0
+
+      Leia(num)
+      enquanto (num <> 0) faça
+             se (num % 2 = 0) então
+                contPar <- contPar + 1
+                somaPares <- somaPares + num
+             senao
+                  contImpar <- contImpar + 1
+             FimSe
+             Leia(num)
+      FimEnquanto
+      
+      mediaPares <- somaPares / contPar
+      
+      Escreval("Quantidade de números pares: ", contPar)
+      Escreval("Quantidade de números ímpares: ", contImpar)
+      Escreval("Média dos números pares: ", mediaPares)
+
+Fimalgoritmo

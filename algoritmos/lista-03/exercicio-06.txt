@@ -1,0 +1,20 @@
+Algoritmo "exercicio06"
+
+Var
+
+   quantidade, i: inteiro
+   preco, total: real
+
+Inicio
+
+      total <- 0
+
+      para i <- 1 até 50 faça
+           Leia(quantidade)
+           Leia(preco)
+           total <- total + (quantidade * preco)
+      FimPara
+      
+      Escreval("Total gasto: R$", total)
+
+Fimalgoritmo

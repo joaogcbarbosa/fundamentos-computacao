@@ -1,0 +1,19 @@
+Algoritmo "exercicio05"
+
+Var
+
+   i: inteiro
+   peso, pesoTotal: real
+
+Inicio
+
+      pesoTotal <- 0
+
+      para i <- 1 até 25 faça
+           Leia(peso)
+           pesoTotal <- pesoTotal + peso
+      FimPara
+      
+      Escreval("Peso total:", pesoTotal, "kg")
+
+Fimalgoritmo

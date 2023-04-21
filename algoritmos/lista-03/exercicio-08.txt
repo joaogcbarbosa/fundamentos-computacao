@@ -1,0 +1,25 @@
+Algoritmo "exercicio08"
+
+Var
+
+   a, b, i, soma: inteiro
+
+Inicio
+
+      Leia(a)
+      Leia(b)
+      
+      soma <- 0
+      
+      se (a > b) então
+         Escreval("A soma não será realizada.")
+      senao
+         para i <- a + 1 até b - 1 faça
+            se (i % 4 = 0) então
+               soma <- soma + i
+            FimSe
+         FimPara
+         Escreval("Soma dos múltiplos de 4 entre A e B: ", soma)
+      FimSe
+
+Fimalgoritmo

@@ -1,0 +1,23 @@
+Algoritmo "exercicio07"
+
+Var
+
+  a, b, soma, i: inteiro
+
+Inicio
+
+      Leia(a)
+      Leia(b)
+      
+      soma <- 0
+      
+      se (a > b) então
+         Escreval("A soma não será realizada.")
+      senao
+           para i <- a + 1 até b - 1 faça
+                soma <- soma + i
+           FimPara
+           Escreval("Soma dos números entre A e B: ", soma)
+      FimSe
+
+Fimalgoritmo
