@@ -1,0 +1,23 @@
+Algoritmo "exercicio17"
+
+Var
+
+   base, altura, area: real
+
+Inicio
+
+      Leia(base)
+      enquanto (base <= 0) faça
+               Leia(base)
+      FimEnquanto
+      
+      Leia(altura)
+      enquanto (altura <= 0) faça
+               Leia(altura)
+      FimEnquanto
+      
+      area <- base * altura
+      
+      Escreval("Área: ", area, "m2")
+
+Fimalgoritmo

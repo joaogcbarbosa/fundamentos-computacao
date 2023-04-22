@@ -1,0 +1,19 @@
+Algoritmo "exercicio16"
+
+Var
+
+   cont, soma: inteiro
+
+Inicio
+
+      cont <- 2
+      soma <- 0
+
+      enquanto (cont <= 50) faça
+               soma <- soma + cont
+               cont <- cont + 2
+      FimEnquanto
+      
+      Escreval(soma)
+
+Fimalgoritmo

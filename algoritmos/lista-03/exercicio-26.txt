@@ -1,0 +1,82 @@
+Algoritmo "exercicio26"
+
+Var
+
+   inscricao, idade, contFem, contFemComExp, menorIdadeFem, contMasc, contMascComExp, somaIdadeMascComExp, contMascComMais45: inteiro
+   mediaMascComExp, percMascComMais45: real
+   sexo, expServico: caractere
+
+Inicio
+
+      contMasc <- 0
+      contFem <- 0
+      contFemComExp <- 0
+      contMascComExp <- 0
+      contMascComMais45 <- 0
+      somaIdadeMascComExp <- 0
+      menorIdadeFem <- 999
+
+      Leia(inscricao)
+      enquanto inscricao <> 0 faça
+               Leia(idade)
+               Leia(sexo)
+               Leia(expServico)
+
+               se sexo = "F" entao
+                  contFem <- contFem + 1
+                  se (idade < 35) e (expServico = "S") entao
+                       contFemComExp <- contFemComExp + 1
+                  FimSe
+                  se (expServico = "S") e (idade < menorIdadeFem) entao
+                     menorIdadeFem <- idade
+                  FimSe
+               senao
+                    contMasc <- contMasc + 1
+                    se expServico = "S" entao
+                       contMascComExp <- contMascComExp + 1
+                       somaIdadeMascComExp <- somaIdadeMascComExp + idade
+                    FimSe
+                    se idade > 45 entao
+                       contMascComMais45 <- contMascComMais45 + 1
+                    FimSe
+               FimSe
+               
+               Leia(inscricao)
+      FimEnquanto
+      
+      se inscricao = 0 entao
+         Leia(idade)
+         Leia(sexo)
+         Leia(expServico)
+
+         se sexo = "F" entao
+            contFem <- contFem + 1
+            se (idade < 35) e (expServico = "S") entao
+                 contFemComExp <- contFemComExp + 1
+            FimSe
+            se (expServico = "S") e (idade < menorIdadeFem) entao
+               menorIdadeFem <- idade
+            FimSe
+         senao
+              contMasc <- contMasc + 1
+              se expServico = "S" entao
+                 contMascComExp <- contMascComExp + 1
+                 somaIdadeMascComExp <- somaIdadeMascComExp + idade
+              FimSe
+              se idade > 45 entao
+                 contMascComMais45 <- contMascComMais45 + 1
+              FimSe
+         FimSe
+      FimSe
+      
+      mediaMascComExp <- somaIdadeMascComExp / contMascComExp
+      percMascComMais45 <- (contMascComMais45 * 100) / contMasc
+      
+      Escreval("Número de candidatos mulheres: ", contFem)
+      Escreval("Número de candidatos homens: ", contMasc)
+      Escreval("Idade média dos homens que já têm experiência no serviço: ", mediaMascComExp)
+      Escreval("Porcentagem dos homens com mais de 45 anos entre o total de homens: ", percMascComMais45, "%")
+      Escreval("Número de mulheres que têm idade inferior a 35 anos e com experiência no serviço: ", contFemComExp)
+      Escreval("Menor idade entre mulheres que já têm experiência no serviço: ", menorIdadeFem)
+
+Fimalgoritmo

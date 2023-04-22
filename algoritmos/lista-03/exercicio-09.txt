@@ -1,0 +1,18 @@
+Algoritmo "exercicio09"
+
+Var
+
+   base, altura, area: real
+
+Inicio
+
+      Leia(base)
+      Leia(altura)
+      enquanto (base > 0) e (altura > 0) faça
+               area <- base * altura
+               Escreval("Área: ", area, "m2")
+               Leia(base)
+               Leia(altura)
+      FimEnquanto
+
+Fimalgoritmo

@@ -1,0 +1,34 @@
+Algoritmo "exercicio13"
+
+Var
+
+   total, contSim, contNao: inteiro
+   resposta: caractere
+   percSim, percNao: real
+
+Inicio
+
+      total <- 0
+      contSim <- 0
+      contNao <- 0
+
+      Leia(resposta)
+      enquanto resposta <> "F" faça
+               total <- total + 1
+               se resposta = "S" entao
+                  contSim <- contSim + 1
+               senao
+                    se (resposta = "N") entao
+                       contNao <- contNao + 1
+                    FimSe
+               FimSe
+               Leia(resposta)
+      FimEnquanto
+      
+      percSim <- (contSim * 100) / total
+      percNao <- (contNao * 100) / total
+      
+      Escreval("Satisfeitos: ", percSim, "%")
+      Escreval("Não satisfeitos: ", percNao, "%")
+
+Fimalgoritmo

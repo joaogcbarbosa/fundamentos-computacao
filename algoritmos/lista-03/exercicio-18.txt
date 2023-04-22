@@ -1,0 +1,34 @@
+Algoritmo "exercicio18"
+
+Var
+
+   idade, somaIdades, cont, contAdultos: inteiro
+   mediaIdades, percAdultos: real
+
+Inicio
+
+      somaIdades <- 0
+      contAdultos <- 0
+
+      Leia(idade)
+      enquanto idade <> 100 faça
+               cont <- cont + 1
+               somaIdades <- somaIdades + idade
+               se (idade > 21) e (idade < 65) entao
+                  contAdultos <- contAdultos + 1
+                  percAdultos <- contAdultos / cont
+               FimSe
+               Leia(idade)
+      FimEnquanto
+      
+      se (idade = 100) entao
+         somaIdades <- somaIdades + idade
+         cont <- cont + 1
+      FimSe
+      
+      mediaIdades <- somaIdades / cont
+      
+      Escreval("Média idades: ", mediaIdades)
+      Escreval("Percentagem de adultos: ", percAdultos, "%")
+
+Fimalgoritmo

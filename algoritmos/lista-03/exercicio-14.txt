@@ -1,0 +1,21 @@
+Algoritmo "exercicio14"
+
+Var
+
+   n, i, somaImpares: inteiro
+
+Inicio
+
+      somaImpares <- 0
+
+      Leia(n)
+      
+      para i <- 1 até n faça
+         se (i % 2 <> 0) entao
+            somaImpares <- somaImpares + i
+         FimSe
+      FimPara
+      
+      Escreval("Soma: ", somaImpares)
+
+Fimalgoritmo
