@@ -1,0 +1,26 @@
+Algoritmo "exercicio04"
+
+Var
+
+   produto, produtoMaisCaro: caracter
+   preco, maisCaro: real
+
+Inicio
+
+      produtoMaisCaro <- "XXX"
+      maisCaro <- -1
+
+      Leia(produto)
+      enquanto (produto <> "XXX") faça
+               Leia(preco)
+               se (preco > maisCaro) entao
+                  maisCaro <- preco
+                  produtoMaisCaro <- produto
+               FimSe
+               Leia(produto)
+      FimEnquanto
+      
+      Escreval("Produto mais caro:", produtoMaisCaro)
+      Escreval("Valor: R$", maisCaro)
+               
+Fimalgoritmo

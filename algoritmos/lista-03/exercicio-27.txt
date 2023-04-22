@@ -1,0 +1,23 @@
+Algoritmo "exercicio27"
+
+Var
+
+   i, n, cont: inteiro
+
+Inicio
+
+      Leia(n)
+
+      para i <- 0 até n faça
+           se (n % i = 0) entao
+              cont <- cont + 1
+           FimSe
+      FimPara
+      
+      se (cont = 2) entao
+         Escreval(n, " é primo")
+      senao
+           Escreval(n, " não é primo")
+      FimSe
+               
+Fimalgoritmo

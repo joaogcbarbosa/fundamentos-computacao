@@ -1,0 +1,30 @@
+Algoritmo "exercicio30"
+
+Var
+
+   numAtual, somaDivisores, i, contPerfeitos: inteiro
+
+Inicio
+
+      contPerfeitos <- 0
+      somaDivisores <- 0
+      i <- 1
+      numAtual <- 2
+      
+      enquanto (contPerfeitos <> 4) faça
+               enquanto (i < numAtual) faça
+                        se (numAtual % i = 0) entao
+                           somaDivisores <- somaDivisores + i
+                        FimSe
+                        i <- i + 1
+               FimEnquanto
+               se (somaDivisores = numAtual) entao
+                  contPerfeitos <- contPerfeitos + 1
+                  Escreva(numAtual)
+               FimSe
+               i <- 1
+               numAtual <- numAtual + 1
+               somaDivisores <- 0
+      FimEnquanto
+               
+Fimalgoritmo

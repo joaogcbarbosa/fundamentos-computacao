@@ -1,0 +1,29 @@
+Algoritmo "exercicio29"
+
+Var
+
+   somaDivisores, num, i: inteiro
+
+Inicio
+
+      somaDivisores <- 0
+      
+      Leia(num)
+      
+      para i <- 1 até num - 1 faça
+           se (num % i = 0) entao
+              somaDivisores <- somaDivisores + i
+           FimSe
+      FimPara
+      
+      se (num = 0) ou (num = 1) entao
+         Escreval(num, " não é perfeito")
+      senao
+         se (somaDivisores = num) então
+            Escreval(num, " é perfeito")
+         senao
+              Escreval(num, " não é perfeito")
+         FimSe
+      FimSe
+               
+Fimalgoritmo
